@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http:///www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+	<div class="left">
+		<table>
+			<tr th:each="menu: ${menuList}">
+				<th th:text="${menu.category_id}"></th>
+				<td th:text="${menu.category_name}"></td>
+			</tr> 
+		</table>
+	</div>
+</body>
+</html>

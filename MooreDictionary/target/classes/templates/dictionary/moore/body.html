@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http:///www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div><script th:src="menu.js"></script></div>
+	<div>
+		<table>
+			<tr>
+				<th>id</th>
+				<th>word</th>
+				<th>mean</th>
+			</tr>
+			<tr th:each="words: ${allWords}">
+				<td><p th:text="${words.id}"></p></td>
+				<td><p th:text="${words.word}"></p></td>
+				<td><p th:text="${words.mean3}"></p></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
